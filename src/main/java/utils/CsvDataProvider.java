@@ -15,11 +15,7 @@ public class CsvDataProvider extends DataProviderImpl{
 public final char SEPARATE = '|'; 
 public final String ANNOTATION="#";
 	
-	/**
-	 * 重写 generateData 方法
-	 * @param caseName 方法名称
-	 * @param dataFile 测试数据
-	 */
+	
 	@Override
     protected void generateData(String caseName, String dataFile) {
 		List<String[]> csvList = getCSVList(caseName,dataFile);
@@ -34,12 +30,7 @@ public final String ANNOTATION="#";
         }
 		}
 	
-	/**
-	 * 获取CSV list 列表
-	 * @param caseName
-	 * @param dataFile
-	 * @return
-	 */
+	
 	@SuppressWarnings("resource")
 	private List<String[]> getCSVList(String caseName,String dataFile){
 		List<String[]> csvList = new ArrayList<String[]>();
@@ -47,7 +38,7 @@ public final String ANNOTATION="#";
 			CSVReader reader = new CSVReader(new InputStreamReader(new FileInputStream(defaultPath+dataFile+File.separator+caseName),"GBK"),SEPARATE);
 			String[] line=null;
 			while ((line=reader.readNext())!=null) {
-				//过滤掉空行或以ANNOTATION定义的字符开头的行
+			
 				if(line.length==1&&line[0].isEmpty()||line[0].startsWith(ANNOTATION)){
 					continue;
 				}
