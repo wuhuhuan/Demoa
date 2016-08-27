@@ -34,7 +34,7 @@ public class Register {
 	public void beforeClass(){
 		data = new ParseProperties(System.getProperty("user.dir")+"\\tool\\test.properties");
 		locator = new ParseProperties(System.getProperty("user.dir")+"\\tool\\locator.properties");
-		Browsers browser = new Browsers(BrowsersType.firefox);
+		Browsers browser = new Browsers(BrowsersType.chrome);
 		driver = browser.driver;
 	}
 //	@Parameters("TestData")
