@@ -117,7 +117,13 @@
 
   
   <dependencies>
-  
+  <dependency>
+   		<groupId>org.opencv</groupId>
+        <artifactId>opencv</artifactId>
+        <version>2.4.9</version>
+        <systemPath>C:/opencv/build/java/opencv-249.jar</systemPath>
+        <scope>system</scope>
+  </dependency>
   	<dependency>
   		<groupId>org.xerial</groupId>
   		<artifactId>sqlite-jdbc</artifactId>
