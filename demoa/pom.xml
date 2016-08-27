@@ -121,7 +121,8 @@
    		<groupId>org.opencv</groupId>
         <artifactId>opencv</artifactId>
         <version>3.7.0</version>
-        <systemPath>E://demoa/src/main/resources/opencsv-3.7.jar</systemPath>
+        <systemPath>${project.basedir}/libs/opencsv-3.7.jar</systemPath>
+        
         <scope>system</scope>
   </dependency>
   	<dependency>
