@@ -117,6 +117,13 @@
 
   
   <dependencies>
+   <dependency>
+        <groupId>org.opencv</groupId>
+        <artifactId>opencv</artifactId>
+        <version>2.4.9</version>
+        <systemPath>${project.basedir}/libs/opencsv-3.7.jar</systemPath>
+        <scope>system</scope>
+    </dependency>
   
   	<dependency>
   		<groupId>org.xerial</groupId>
