@@ -81,4 +81,9 @@ public class DataProviderImpl implements IData{
 		data.clear();
 		return o;
 	}
+
+public static void main(String[]args){
+	
+}
+
 }
