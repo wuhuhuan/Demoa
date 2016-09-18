@@ -24,7 +24,7 @@
             
                 <sureXmlFiles>
                     <sureXmlFile>
-                         ${project.basedir}/src/test/java/TestModule1/Register.xml
+                         ${project.basedir}/src/test/java/test/1.xml
                     </sureXmlFile>
                     
                 </sureXmlFiles>
@@ -50,7 +50,7 @@
             <configuration>
                 <includes>
                     <include>
-                    TestModule1/Register.java
+                    test/TestCase1.java
                     </include>
                 </includes>
             </configuration>
