@@ -18,7 +18,7 @@ public class Browsers {
 	public WebDriver driver = null;
 	private FirefoxProfile firefoxprofile = null;
 	private static DesiredCapabilities caps = null;
-	private String projectpath ="E:\\BaiduYunDownload\\SeleniumTaoBao\\Code\\demoa\\demoa";
+	private String projectpath =System.getProperty("user.dir");
 
 	
 	public Browsers(BrowsersType browserstype){
