@@ -18,7 +18,7 @@ public class Browsers {
 	public WebDriver driver = null;
 	private FirefoxProfile firefoxprofile = null;
 	private static DesiredCapabilities caps = null;
-	private String projectpath ="E:\\BaiduYunDownload\\SeleniumTaoBao\\Code\\demoa\\demoa";
+	private String projectpath =System.getProperty("user.dir");
 
 	
 	public Browsers(BrowsersType browserstype){
@@ -51,6 +51,7 @@ public class Browsers {
 		        driver.manage().window().maximize();
 		        break;
 		    case chrome:
+		    	System.setProperty("webdriver.chrome.bin", "C:/Users/wuhuh/AppData/Local/Google/Chrome/Application/chrome.exe"); 
 				System.setProperty("webdriver.chrome.driver", projectpath+"/tool/chromedriver.exe"); 
 				caps = DesiredCapabilities.chrome();
 				caps.setCapability("chrome.switches",Arrays.asList("--start-maximized"));  //鏈�ぇ鍖朾rowser
